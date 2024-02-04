@@ -6,3 +6,4 @@ This repository contains basic python program to decode the following types of e
 5) Binary to Hexadeximal
 6) Binary to ASCII
 7) Hexadecimal to ASCII
+8) Base64 to ASCII
