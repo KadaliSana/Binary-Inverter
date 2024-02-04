@@ -1,3 +1,5 @@
+import base64
+
 a="""This program can decode the following list:
 1)Binary Inversion
 2)Integer to Binary
@@ -5,7 +7,8 @@ a="""This program can decode the following list:
 4)Binary to Integer
 5)Binary to Hexadeximal
 6)Binary to ASCII
-7)Hexadecimal to ASCII"""
+7)Hexadecimal to ASCII
+8)Base 64 to ASCII"""
 print(a)
 y=input("Enter a number to choose the format to decode:")
 x=input("Enter your Input:")
@@ -51,6 +54,10 @@ def IntHex(x):
     a = str(hex(int(x)))
     return a
 
+def Base64ASCII(x):
+    a=base64.b64decode(x)
+    return a
+
 if y=="1":
     print(BinInvert(x))
 elif y=="2":
@@ -65,3 +72,5 @@ elif y=="6":
     print(BinASCII(x))
 elif y=="7":
     print(HexASCII(x))
+elif y=="8":
+    print(Base64ASCII(x))
